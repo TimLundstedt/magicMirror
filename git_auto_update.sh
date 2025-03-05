@@ -2,9 +2,10 @@
 
 git checkout master
 status=$( git pull )
-status=$(echo $status | grep -o "Already" )
+status="1$(echo $status | grep -o "Remote")"
 
 echo "$status"
-if [ $status != "Already" ]; then
-  echo "Git already latest"
+if [ $status == "1" ]; then
+  echo "Directory is now updated"
+  sudo systemctl restart magic_mirror.service
 fi

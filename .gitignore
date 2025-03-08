@@ -58,11 +58,6 @@ Temporary Items
 .directory
 .Trash-*
 
-# Ignore changes to the custom css files but keep the sample and main.
-/css/*
-!/css/custom.css.sample
-!/css/main.css
-
 # Vim
 ## swap
 [._]*.s[a-w][a-z]

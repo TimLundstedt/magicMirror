@@ -42,31 +42,29 @@ let config = {
 			module: "alert",
 		},
 		{
-			module: "updatenotification",
-			position: "top_bar"
-		},	
-		{
 			module: "compliments",
 			position: "lower_third"
 		},
 		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openmeteo",
-				type: "current",
-				lat: 40.776676,
-				lon: -73.971321
-			}
-		},
-		{
 			module: 'MMM-JEOPARDY',
-			position: 'top_left',                  // Works well anywhere
+			position: 'top_right',                  // Works well anywhere
 			config: { 
-				useHeader: false,              // true if you want a header
+				useHeader: true,              // true if you want a header
 					header: "This is Jeopardy!",   // Any text you want
 				maxWidth: "250px",             // Stretch or constrain according to region
 				animationSpeed: 3000,          // New clue fades in and out
+			}
+		},
+		{
+			module: 'MMM-Facts',
+			position: 'bottom_bar',
+		},
+		{
+			module: "MMM-ISS-Live",
+			header: "ISS Live Stream", // With header
+			position: "top_left", // Best in left region
+			config: {
+			  url: "https://www.youtube.com/embed/xRPjKQtRXR8?si=zi-AnQaKiuwKkaLR", // Another video stream
 			}
 		},
 	]

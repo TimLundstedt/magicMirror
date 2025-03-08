@@ -39,23 +39,6 @@ let config = {
 
 	modules: [
 		{
-			module: "alert",
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
-			module: 'MMM-JEOPARDY',
-			position: 'top_right',                  // Works well anywhere
-			config: { 
-				useHeader: true,              // true if you want a header
-					header: "This is Jeopardy!",   // Any text you want
-				maxWidth: "250px",             // Stretch or constrain according to region
-				animationSpeed: 3000,          // New clue fades in and out
-			}
-		},
-		{
 			module: 'MMM-Facts',
 			position: 'bottom_bar',
 		},

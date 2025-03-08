@@ -10,13 +10,13 @@
 # .lock-wscript
 # build/Release
 /node_modules/**/*
-# fonts/node_modules/**/*
-# vendor/node_modules/**/*
+fonts/node_modules/**/*
+vendor/node_modules/**/*
 # !/tests/node_modules/**/*
 # jspm_modules
 # .npm
 # .node_repl_history
-# package-lock.json
+package-lock.json
 
 # # Visual Studio Code ignoramuses.
 # .vscode/
@@ -69,4 +69,4 @@
 # *.bak
 
 # # Ignore positions file (#3518)
-# js/positions.js
+js/positions.js

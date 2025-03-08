@@ -1,0 +1,51 @@
+{
+  "name": "mmm-iss-live",
+  "version": "2.0.4",
+  "description": "Displays live video from the International Space Station on your MagicMirror².",
+  "keywords": [
+    "MagicMirror",
+    "ISS",
+    "livestream"
+  ],
+  "homepage": "https://github.com/KristjanESPERANTO/MMM-ISS-Live#readme",
+  "bugs": {
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KristjanESPERANTO/MMM-ISS-Live"
+  },
+  "license": "MIT",
+  "author": "mykle1 (https://github.com/mykle1/MMM-ISS-Live)",
+  "main": "MMM-ISS-Live.js",
+  "scripts": {
+    "lint": "eslint && markdownlint . --ignore node_modules && prettier --check .",
+    "lint:fix": "eslint --fix && markdownlint . --ignore node_modules --fix && prettier . --write",
+    "prepare": "husky",
+    "test": "npm run lint && npm run test:spelling",
+    "test:spelling": "cspell ."
+  },
+  "lint-staged": {
+    "!(*.md)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "*.md": [
+      "markdownlint --ignore node_modules --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@stylistic/eslint-plugin": "^4.1.0",
+    "cspell": "^8.17.5",
+    "eslint": "^9.21.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-package-json": "^0.26.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "markdownlint-cli": "^0.44.0",
+    "prettier": "^3.5.2"
+  }
+}
